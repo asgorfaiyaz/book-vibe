@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
@@ -56,7 +56,11 @@ function AuthButtons({ mobile = false }: { mobile?: boolean }) {
     >
       <Link
         href="/sign-in"
-        className="inline-flex h-9 items-center justify-center rounded-md border px-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+        className={buttonVariants({
+          size: "lg",
+          variant: "outline",
+          className: "px-4",
+        })}
       >
         Sign In
       </Link>
