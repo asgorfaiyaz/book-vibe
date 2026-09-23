@@ -1,5 +1,11 @@
+import { Banner } from "@/components/shared/Banner";
+
 function Home() {
-  return <div className="">Welcome to Book-Vibe!</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
 export default Home;
