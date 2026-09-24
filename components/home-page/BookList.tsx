@@ -2,7 +2,7 @@ import type { Book } from "@/types/book";
 import { BookCard } from "../BookCard";
 
 async function BookList() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/db.json`);
+  const res = await fetch(`${process.env.BOOKS_API_URL}/books`);
 
   if (!res.ok) {
     throw new Error("Failed to fetch books");
